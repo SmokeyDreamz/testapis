@@ -108,7 +108,7 @@ def load_random_word():
     entry.delete(0, tk.END)
 
     try:
-        current_word = requests.get(
+        current_word = requests.get(   
             "https://random-word-api.herokuapp.com/word",
             timeout=5
         ).json()[0].lower()
